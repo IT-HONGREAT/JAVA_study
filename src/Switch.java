@@ -44,7 +44,35 @@ public class Switch {
                 System.out.println("재수강필수");
                 break;
         }
+        int number = 134354;
+        String answer;
 
+        switch (number % 7){
+            case 1:
+                answer= "One";
+                break;
+            case 2:
+                answer= "Two";
+                break;
+            case 3:
+                answer= "Three";
+                break;
+            case 4:
+                answer= "Four";
+                break;
+            case 5:
+                answer= "Five";
+                break;
+            case 6:
+                answer= "Six";
+                break;
+            default:
+                answer="Zero";
+                        break;
+
+
+        }
+        System.out.println(answer);
 
     }
 }
