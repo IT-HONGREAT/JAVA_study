@@ -25,5 +25,18 @@ public class For {
         }
         System.out.println("1~100 합 : "+hundred);
 //        신기한점: 문자열에서 '' 는 에러가 발생하기 때문에, " " 를 사용함..
+
+//        구구단은 기본으로 만들 수 있어야지~!
+        int gob;
+        for (int number = 1;number<=9;number++){
+            for (int number2 = 1;number2<=9;number2++){
+                gob = number * number2;
+                System.out.print(number+" * ");
+                System.out.print(number2+" = ");
+                System.out.println(gob);
+            }
+
+        }
+
     }
 }
