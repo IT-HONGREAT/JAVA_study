@@ -35,8 +35,22 @@ public class ForEach {
             System.out.println("for-each 문법사용 : "+test);
         }
 
+        System.out.println("");
 
+        int[] int_practice = new int[30];
+        for (int i = 0; i < int_practice.length;i++){
+            int_practice[i] = i+1001;
+            System.out.println(int_practice[i]);
+        }
+        String[] remainders = new String[4];
+        remainders[0] = "Zero";
+        remainders[1] = "One";
+        remainders[2] = "Two";
+        remainders[3] = "Three";
 
-
+//        문자열을 practice 배열만큼 반복
+        for (int i : int_practice) {
+            System.out.println(remainders[i%4]);
+        }
     }
 }
