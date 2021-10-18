@@ -1,10 +1,16 @@
 public class BankDriver {
     public static void main(String[] args) {
-        // 사람 선언
+        // p1 선언
         Person p1 =new Person();
         p1.name = "첫고객";
         p1.age = 27;
         p1.cashAmount = 100;
+
+        // p2 선언
+        Person p2 = new Person();
+        p2.name = "홍인영";
+        p2.age = 27;
+        p2.cashAmount = 100000;
 
 
         // 은행 계좌 생성
@@ -17,5 +23,18 @@ public class BankDriver {
         System.out.println(p1.account.balance);
         System.out.println(a1.owner.name);
 
-    }
-}
+        // p2계좌 생성
+        BankAccount a2 = new BankAccount();
+        a2.balance = 500000;
+        //연결
+        p1.account = a2;
+        a2.owner = p2;
+
+
+        //입출금해보기
+        a2.deposit(30000);
+        a2.withdraw(170000);
+        a2.deposit(620000);
+        a2.withdraw(890000);
+
+    }}
