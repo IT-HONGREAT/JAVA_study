@@ -3,13 +3,15 @@ public class BankDriver {
         // p1 선언
         Person p1 =new Person();
         p1.name = "첫고객";
-        p1.age = 27;
+//        p1.age = 27;
+        p1.setAge(20);
         p1.cashAmount = 100;
 
         // p2 선언
         Person p2 = new Person();
         p2.name = "홍인영";
-        p2.age = 27;
+//        p2.age = 27;
+        p2.setAge(27);
         p2.cashAmount = 100000;
 
 
