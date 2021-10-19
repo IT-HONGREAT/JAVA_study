@@ -31,5 +31,12 @@ public class Person {
     public int getCashAmount() {
         return cashAmount;
     }
+    public BankAccount getAccount() {
+        return account;
+    }
+
+    public void setAccount(BankAccount newAccount){
+        account = newAccount;
+    }
 
 }
